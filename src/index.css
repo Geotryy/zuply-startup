@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* paleta base */
+:root {
+  --sidebar: #202A42;   /* navy do print */
+  --sidebar-hover: #233050;
+  --accent: #4d6ECF;    /* botão Chat */
+  --text: #FFFFFF
+}
