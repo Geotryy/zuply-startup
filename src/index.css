@@ -1,11 +1,35 @@
+/* Tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* paleta base */
+/* Variáveis de tema usadas na Sidebar */
 :root {
-  --sidebar: #202A42;   /* navy do print */
-  --sidebar-hover: #233050;
-  --accent: #4d6ECF;    /* botão Chat */
-  --text: #FFFFFF
+  --sidebar: #0f172a;         /* slate-900 */
+  --sidebar-hover: #1f2937;   /* slate-800 aprox */
+  --accent: #3b82f6;          /* blue-500 */
+}
+
+/* Garanta altura total e reset básico */
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #f8fafc; /* slate-50 */
+}
+
+/* ZERE o que o template do Vite colocava */
+#root {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/* Evite sublinhado globalmente (você também já usa no-underline nos links) */
+a { text-decoration: none; 
+  color: #f8fafc;
+  font-family: Arial, Helvetica, sans-serif;
 }
